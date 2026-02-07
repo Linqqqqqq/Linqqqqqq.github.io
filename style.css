@@ -150,29 +150,55 @@ main p {
 
 /* -------------------- Panels -------------------- */
 .panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; /* space between panels */
   padding: 80px 20px;
-  background-color: #fafafa;
+  background-color: var(--background-color);
 }
 
 .panel {
-  max-width: 700px;
-  margin: 0 auto 40px auto;
-  padding: 30px;
-  border-radius: 12px;
+  position: relative;
   background-color: var(--panel-bg);
+  color: var(--text-color);
+  border-radius: 12px;
   box-shadow: 0 10px 25px var(--panel-shadow);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* pushes button to bottom */
+  aspect-ratio: 1 / 1;            /* makes it square */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-.panel h2 {
-  margin-top: 0;
+.panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px var(--panel-shadow);
+}
+
+.panel-button {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4784ED;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.panel-button:hover {
+  background-color: #2c2c2c;
 }
 
 /* -------------------- Dark Mode -------------------- */
 body.dark-mode {
   --text-color: #ffffff;
   --subtitle-color: #bbbbbb;
-  --background-color: #121212;
+  --background-color: ##242F4A;
   --header-bg: #1f1f1f;
   --header-border: #444;
   --nav-link-color: #82aaff;
