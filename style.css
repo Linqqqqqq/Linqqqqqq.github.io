@@ -13,6 +13,26 @@ header {
   border-bottom: 1px solid #e5e7eb;
   background-color: #ffffff;
 }
+
+.nav-links a {
+  color: #3498db;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode header {
+  background-color: #1f1f1f;
+  border-bottom: 1px solid #444;
+}
+
+body.dark-mode .nav-links a {
+  color: #82aaff;
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
