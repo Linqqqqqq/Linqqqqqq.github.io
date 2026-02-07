@@ -57,7 +57,8 @@ body.dark-mode .nav-links a {
   font-size: 52px;
   line-height: 100%;
   letter-spacing: 0%;
-  max-width: 1296px;
+  width: 90%
+  max-width: 1600px;
   color: #000000; 
   margin: 0; 
 }
@@ -74,8 +75,8 @@ body.dark-mode .nav-links a {
   line-height: 22px;    
   letter-spacing: 0;
   color: #82838B;
-  max-width: 806px;
-  width: 100%;            
+  max-width: 1200px;
+  width: 80%;            
   text-align: center;
   margin: 16px 0 32px 0;  
 }
@@ -87,12 +88,12 @@ body.dark-mode .nav-links a {
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 20px;               
+  font-size: 18px;               
   color: #ffffff;
   text-decoration: none;
   background-color: #2C2C2C;
   border-top: 1px solid #2C2C2C;
-  border-radius: 42px;
+  border-radius: 10px; /* adjusts the curve of the button */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
