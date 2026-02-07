@@ -67,11 +67,41 @@ body.dark-mode .nav-links a {
   color: #4784ED; 
 }
 
-.subtitle {
-  margin-top: 1rem;
-  max-width: 600px;
-  color: #555;
+.hero .subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;    
+  letter-spacing: 0;
+  color: #82838B;
+  max-width: 806px;
+  width: 100%;            
+  text-align: center;
+  margin: 16px 0 32px 0;  
 }
+.hero-button {
+  display: inline-block;        
+  width: 242px;
+  height: 84px;
+  line-height: 84px;            
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;               
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #2C2C2C;
+  border-top: 1px solid #2C2C2C;
+  border-radius: 42px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #4784ED;     
+  border-top-color: #4784ED;
+}
+
 .logo a {
   font-weight: 700;
   font-size: 1.4rem;
