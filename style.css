@@ -19,6 +19,14 @@ header {
 }
 
 /* Dark Mode */
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 20px;
+  color: inherit; /* Matches nav link color */
+}
 body.dark-mode {
   background-color: #121212;
   color: #e0e0e0;
