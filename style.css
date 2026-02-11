@@ -198,7 +198,7 @@ main p {
 body.dark-mode {
   --text-color: #ffffff;
   --subtitle-color: #bbbbbb;
-  --background-color: ##242F4A;
+  --background-color: #242F4A;
   --header-bg: #1f1f1f;
   --header-border: #444;
   --nav-link-color: #82aaff;
