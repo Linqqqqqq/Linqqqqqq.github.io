@@ -98,7 +98,7 @@ header {
 
 /* Hover state for dropdown links */
 .dropdown-content a:hover {
-  background-color: #c5deed;
+  background-color: #93b4ed;
   color: var(--background-color);
 }
 
