@@ -12,18 +12,58 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <a href="index.html">Home</a>
+  <div class="logo">
+    <a href="index.html">Home</a>
+  </div>
+
+  <nav class="nav-links">
+    <!-- Coding dropdown -->
+    <div class="dropdown">
+      <a href="coding.html" class="dropbtn">Coding ▼</a>
+      <div class="dropdown-content">
+        <a href="data-analysis.html">Data Analysis</a>
+        <a href="computational-neuroscience.html">Computation Neuroscience</a>
+        <a href="projects.html">Projects</a>
+      </div>
     </div>
 
-    <nav class="nav-links">
-      <a href="coding.html">Coding</a>
-      <a href="research.html">Research</a>
-      <a href="ranking.html">Tier Lists</a>
-      <a href="about.html">About</a>
-      <button id="dark-mode-toggle">🌙</button>
-    </nav>
-  </header>
+    <!-- Research dropdown -->
+    <div class="dropdown">
+      <a href="research.html" class="dropbtn">Research ▼</a>
+      <div class="dropdown-content">
+        <a href="eeg-research.html">Everything on EEG</a>
+        <a href="literature-reviews.html">Everything on Lit(erature) Reviews</a>
+        <a href="experimental-design.html">Everything on Experimental Design</a>
+      </div>
+    </div>
+
+    <!-- Biology/Kin dropdown -->
+    <div class="dropdown">
+      <a href="biology-kin.html" class="dropbtn">Biology/Kin ▼</a>
+      <div class="dropdown-content">
+        <a href="concussions.html">Everything on Concussions</a>
+        <a href="gerontology.html">Everything on Aging</a>
+        <a href="neuroscience.html">Everything on Neuroscience</a>
+      </div>
+    </div>
+
+    <!-- Tier Lists dropdown -->
+    <div class="dropdown">
+      <a href="main-tierlist.html" class="dropbtn">Tier Lists ▼</a>
+      <div class="dropdown-content">
+        <a href="ranking-software.html">Coding & Writing Softwares</a>
+        <a href="tierlist2.html">Reference Managers</a>
+        <a href="tierlist3.html">Journal Article Databases</a>
+      </div>
+    </div>
+
+    <!-- About page -->
+    <a href="about.html">About</a>
+
+    <!-- Dark mode toggle -->
+    <button id="dark-mode-toggle">🌙</button>
+  </nav>
+</header>
 
   <main>
     <section class="hero">
@@ -41,20 +81,26 @@
     </section>
     <section class="panels">
       <div class="panel">
-        <h2>Recent Papers</h2>
-        <p>Summary or highlights of a recent psychology paper I found interesting.</p>
+        <h2>Recent Papers (If you like neuroscience)</h2>
+        <p>Highlights of papers I’ve been interested in or worked hard to annotate and I want you to see.</p>
         <a href="recent-papers.html" class="panel-button">View</a>
       </div>
     
       <div class="panel">
-        <h2>Favorite Software</h2>
-        <p>Notes on any software I found useful during my undergrad.</p>
-        <a href="software.html" class="panel-button">View</a>
+        <h2>All My Favourites</h2>
+        <p>My favourite software, UW courses, ways to procrastinate, and everything else I like</p>
+        <a href="favourites.html" class="panel-button">View</a>
+      </div>
+
+      <div class="panel">
+        <h2>Random Ahh Skills I Picked Up</h2>
+        <p>Random things I learned from my co-op jobs, extracurriculars, and what I did during my free time.</p>
+        <a href="unrelated-skills.html" class="panel-button">View</a>
       </div>
     
       <div class="panel">
         <h2>Reflections</h2>
-        <p>Lessons learned, insights, and personal thoughts on my psychology degree.</p>
+        <p>All my incredibly biased opinions on lessons learned, how useful the things I did were, and personal thoughts on my psychology degree.</p>
         <a href="reflections.html" class="panel-button">View</a>
       </div>
     </section>
