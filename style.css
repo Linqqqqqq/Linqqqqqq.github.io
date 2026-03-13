@@ -51,6 +51,7 @@ header {
   gap: 32px; /* spacing between nav items */
 }
 
+
 /* Dropdown container */
 .nav-links .dropdown {
   position: relative;
@@ -97,7 +98,7 @@ header {
 
 /* Hover state for dropdown links */
 .dropdown-content a:hover {
-  background-color: #ADD8E6;
+  background-color: #c5deed;
   color: var(--background-color);
 }
 
@@ -109,14 +110,17 @@ header {
 /* Normal nav links (non-dropdown) */
 .nav-links a {
   text-decoration: none;      /* remove underline */
-  color: var(--nav-link-color); /* normal color */
+  color: var(--nav-link-color);
   font-weight: 300;
+  padding: 6px 12px;          /* add some padding for the box */
+  border-radius: 8px;          /* rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover state for normal nav links */
+/* Hover state */
 .nav-links a:hover {
-  text-decoration: underline; /* optional underline on hover */
-  color: var(--nav-link-hover);
+  background-color: #e0e0e0;  /* light gray background */
+  color: var(--nav-link-color); /* keep text color consistent */
 }
 
 /* Visited links */
