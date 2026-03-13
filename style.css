@@ -31,6 +31,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 16px 24px;
+  line-height: 1.6;
   border-bottom: 1px solid var(--header-border);
   background-color: var(--header-bg);
   transition: background-color 0.3s ease, border-color 0.3s ease;
