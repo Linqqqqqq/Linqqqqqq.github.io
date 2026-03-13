@@ -15,18 +15,20 @@ document.addEventListener("DOMContentLoaded", () => {
   // Runaway button
   const button = document.getElementById("escapeButton");
   if (button) {
-    const rect = button.getBoundingClientRect();
-    const originalX = rect.left;
-    const originalY = rect.top;
-    const moveDistance = 100; // max pixels to move
+    const moveDistance = 100; // max pixels to move each hover
 
     button.addEventListener("mouseover", () => {
+      // Get current position
+      const currentX = button.offsetLeft;
+      const currentY = button.offsetTop;
+
+      // Random offset within moveDistance
       const offsetX = (Math.random() * 2 - 1) * moveDistance;
       const offsetY = (Math.random() * 2 - 1) * moveDistance;
 
       button.style.position = "absolute";
-      button.style.left = originalX + offsetX + "px";
-      button.style.top = originalY + offsetY + "px";
+      button.style.left = currentX + offsetX + "px";
+      button.style.top = currentY + offsetY + "px";
     });
   }
-}); 
+});
