@@ -29,18 +29,4 @@ document.addEventListener("DOMContentLoaded", () => {
       button.style.top = originalY + offsetY + "px";
     });
   }
-});    // Maximum distance to move in any direction
-    const moveDistance = 100; // pixels
-
-    // Random offset within -moveDistance to +moveDistance
-    const offsetX = (Math.random() * 2 - 1) * moveDistance;
-    const offsetY = (Math.random() * 2 - 1) * moveDistance;
-
-    // Set new position
-    button.style.position = "absolute";
-    button.style.left = originalX + offsetX + "px";
-    button.style.top = originalY + offsetY + "px";
-  });
-}
-
-});
+}); 
