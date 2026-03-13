@@ -1,5 +1,3 @@
-<script src="script.js">
-
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("escapeButton");
 
@@ -19,5 +17,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
-</script>
