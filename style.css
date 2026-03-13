@@ -78,7 +78,7 @@ header {
 
 .hero h1 {
   font-family: 'Inter', sans-serif;
-  font-weight: 350;
+  font-weight: 500;
   font-size: clamp(36px, 5vw, 52px); /* scales with screen size */
   line-height: 100%;
   letter-spacing: 0%;
