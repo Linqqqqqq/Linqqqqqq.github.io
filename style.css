@@ -44,12 +44,18 @@ header {
   text-decoration: none;
 }
 
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px; /* spacing between nav items */
+}
+
 /* Dropdown container */
 .nav-links .dropdown {
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 32px; /* change to increase spacing between each nav item */
 }
 
 /* Main link styling */
@@ -62,12 +68,12 @@ header {
   color: var(--nav-link-color);
   cursor: pointer;
   text-decoration: none;
-  padding: 0 4px; /* optional spacing */
+  padding: 0 4px;
 }
 
 /* Dropdown menu: hidden by default */
 .dropdown-content {
-  display: none; /* hidden */
+  display: none;
   position: absolute;
   top: 100%; /* directly below the button */
   left: 0;
@@ -89,6 +95,7 @@ header {
   transition: background-color 0.3s ease;
 }
 
+/* Hover state for dropdown links */
 .dropdown-content a:hover {
   background-color: var(--highlight-color);
   color: var(--background-color);
@@ -99,6 +106,26 @@ header {
   display: block;
 }
 
+/* Normal nav links (non-dropdown) */
+.nav-links a {
+  text-decoration: none;      /* remove underline */
+  color: var(--nav-link-color); /* normal color */
+  font-weight: 300;
+}
+
+/* Hover state for normal nav links */
+.nav-links a:hover {
+  text-decoration: underline; /* optional underline on hover */
+  color: var(--nav-link-hover);
+}
+
+/* Visited links */
+.nav-links a:visited {
+  color: var(--nav-link-color); /* same as normal */
+  text-decoration: none;        /* remove underline */
+}
+
+/* Dark mode toggle button */
 #dark-mode-toggle {
   background: none;
   border: none;
