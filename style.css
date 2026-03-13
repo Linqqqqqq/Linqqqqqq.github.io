@@ -47,7 +47,9 @@ header {
 /* Dropdown container */
 .nav-links .dropdown {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 32px; /* change to increase spacing between each nav item */
 }
 
 /* Main link styling */
