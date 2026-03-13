@@ -1,6 +1,5 @@
-<script>
+<script src="script.js">
 
-// Escape Button
 const button = document.getElementById("escapeButton");
 
 button.addEventListener("mouseover", () => {
@@ -15,4 +14,5 @@ button.addEventListener("mouseover", () => {
   button.style.top = randomY + "px";
 
 });
+
 </script>
