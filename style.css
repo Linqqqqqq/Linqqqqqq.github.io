@@ -354,6 +354,6 @@ body.dark-mode {
 /* Dark mode nav hover */
 body.dark-mode .nav-links a:hover,
 body.dark-mode .dropbtn:hover {
-  background-color: #555; /* gray hover box */
-  color: #000000;         /* black text for readability */
+  background-color: #A9A9A9; /* darker gray hover box */
+  color: #ffffff;         /* white text for readability */
 }
