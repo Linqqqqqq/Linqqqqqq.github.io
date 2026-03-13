@@ -246,6 +246,9 @@ main p {
   aspect-ratio: 1 / 1;            /* makes it square */
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
+.panel p {
+  color: var(--panel-text-color);
+}
 
 .panel:hover {
   transform: translateY(-5px);
@@ -348,7 +351,7 @@ body.dark-mode {
   --button-text: #ffffff;
   --panel-bg: #1f1f1f;
   --panel-shadow: rgba(0,0,0,0.2);
-  --panel-text-color: #cccccc;
+  --panel-text-color: #ffffff;
   
 }
 /* Dark mode nav hover */
