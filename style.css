@@ -349,4 +349,11 @@ body.dark-mode {
   --panel-bg: #1f1f1f;
   --panel-shadow: rgba(0,0,0,0.2);
   --panel-text-color: #cccccc;
+  
+}
+/* Dark mode nav hover */
+body.dark-mode .nav-links a:hover,
+body.dark-mode .dropbtn:hover {
+  background-color: #555; /* gray hover box */
+  color: #000000;         /* black text for readability */
 }
