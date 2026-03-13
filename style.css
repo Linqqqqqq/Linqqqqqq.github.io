@@ -44,16 +44,57 @@ header {
   text-decoration: none;
 }
 
-.nav-links a {
-  margin-left: 20px;
-  font-weight: 300;
-  color: var(--nav-link-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
+/* Dropdown container */
+.nav-links .dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
+/* Main link styling */
+.dropbtn {
+  background: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--nav-link-color);
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 4px; /* optional spacing */
+}
+
+/* Dropdown menu: hidden by default */
+.dropdown-content {
+  display: none; /* hidden */
+  position: absolute;
+  top: 100%; /* directly below the button */
+  left: 0;
+  background-color: var(--background-color);
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: var(--nav-link-color);
+  font-weight: 300;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--highlight-color);
+  color: var(--background-color);
+}
+
+/* Show dropdown only on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 #dark-mode-toggle {
