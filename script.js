@@ -1,4 +1,6 @@
 <script>
+
+// Escape Button
 const button = document.getElementById("escapeButton");
 
 button.addEventListener("mouseover", () => {
