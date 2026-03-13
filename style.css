@@ -115,7 +115,7 @@ header {
 
 /* Hover state for normal nav links */
 .nav-links a:hover {
-  text-decoration: none; /* optional underline on hover */
+  text-decoration: underline; /* optional underline on hover */
   color: var(--nav-link-hover);
 }
 
