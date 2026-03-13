@@ -249,11 +249,9 @@ main p {
   font-size: 15px;
   padding: 8px 18px;
   border-radius: 6px;
-
   background-color: transparent;
   border: 1px solid var(--text-color);
   color: var(--text-color);
-
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
