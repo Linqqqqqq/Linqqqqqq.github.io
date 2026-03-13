@@ -10,21 +10,59 @@
 </head>
 
 <body>
+ <header>
+  <div class="logo">
+    <a href="index.html">Home</a>
+  </div>
 
-  <!-- Header stays inside body -->
-  <header>
-    <div class="logo">
-      <a href="index.html">Home</a>
+  <nav class="nav-links">
+    <!-- Coding dropdown -->
+    <div class="dropdown">
+      <a href="coding.html" class="dropbtn">Coding</a>
+      <div class="dropdown-content">
+        <a href="data-analysis.html">Data Analysis</a>
+        <a href="computational-neuroscience.html">Computation Neuroscience</a>
+        <a href="projects.html">Projects</a>
+      </div>
     </div>
 
-    <nav class="nav-links">
-      <a href="coding.html">Coding</a>
-      <a href="research.html">Research</a>
-      <a href="ranking.html">Tier Lists</a>
-      <a href="about.html">About</a>
-      <button id="dark-mode-toggle">🌙</button>
-    </nav>
-  </header>
+    <!-- Research dropdown -->
+    <div class="dropdown">
+      <a href="research.html" class="dropbtn">Research</a>
+      <div class="dropdown-content">
+        <a href="eeg-research.html">Everything on EEG</a>
+        <a href="literature-reviews.html">Everything on Lit(erature) Reviews</a>
+        <a href="experimental-design.html">Everything on Experimental Design</a>
+      </div>
+    </div>
+
+    <!-- Biology/Kin dropdown -->
+    <div class="dropdown">
+      <a href="biology-kin.html" class="dropbtn">Biology/Kin</a>
+      <div class="dropdown-content">
+        <a href="concussions.html">Everything on Concussions</a>
+        <a href="gerontology.html">Everything on Aging</a>
+        <a href="neuroscience.html">Everything on Neuroscience</a>
+      </div>
+    </div>
+
+    <!-- Tier Lists dropdown -->
+    <div class="dropdown">
+      <a href="main-tierlist.html" class="dropbtn">Tier Lists</a>
+      <div class="dropdown-content">
+        <a href="ranking-software.html">Ranking Softwares</a>
+        <a href="ranking-reference-managers.html">Ranking Reference Managers</a>
+        <a href="ranking-journal-article-databases.html">Ranking Journal Article Databases</a>
+      </div>
+    </div>
+
+    <!-- About page -->
+    <a href="about.html">About</a>
+
+    <!-- Dark mode toggle -->
+    <button id="dark-mode-toggle">🌙</button>
+  </nav>
+</header>
 
   <!-- 404 page content -->
   <main class="error-page">
