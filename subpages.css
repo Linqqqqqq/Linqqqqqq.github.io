@@ -1,10 +1,229 @@
-/* Move title near top instead of center */
-
-.hero {
-  min-height: auto;
-  padding-top: 40px;
-  margin-bottom: 30px;
+:root {
+  --text-color: #000000;           /* hero text */
+  --highlight-color: #4784ED;      /* "Nothing" */
+  --subtitle-color: #82838B;
+  --background-color: #ffffff;     /* body background */
+  --header-bg: #ffffff;
+  --header-border: #e5e7eb;
+  --nav-link-color: #000000;
+  --nav-link-hover: #505364;
+  --logo: #111827;
+  --button-bg: #2C2C2C;
+  --button-text: #ffffff;
+  --panel-bg: #ffffff;
+  --panel-shadow: rgba(0,0,0,0.06);
 }
+
+/* -------------------- Body -------------------- */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* -------------------- Header & Nav -------------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  line-height: 1.6;
+  border-bottom: 1px solid var(--header-border);
+  background-color: var(--header-bg);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.logo a {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--logo);
+  text-decoration: none;
+}
+
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px; /* spacing between nav items */
+}
+
+
+/* Dropdown container */
+.nav-links .dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Main link styling */
+.dropbtn {
+  background: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--nav-link-color);
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0 4px;
+}
+
+/* Dropdown menu: hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* directly below the button */
+  left: 0;
+  background-color: var(--background-color);
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: var(--nav-link-color);
+  font-weight: 300;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover state for dropdown links */
+.dropdown-content a:hover {
+  background-color: #93b4ed;
+  color: var(--background-color);
+}
+
+/* Show dropdown only on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Normal nav links (non-dropdown) */
+.nav-links a {
+  text-decoration: none;      /* remove underline */
+  color: var(--nav-link-color);
+  font-weight: 300;
+  padding: 6px 12px;          /* add some padding for the box */
+  border-radius: 8px;          /* rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover state */
+.nav-links a:hover {
+  background-color: #e0e0e0;  /* light gray background */
+  color: var(--nav-link-color); /* keep text color consistent */
+}
+
+/* Visited links */
+.nav-links a:visited {
+  color: var(--nav-link-color); /* same as normal */
+  text-decoration: none;        /* remove underline */
+}
+
+/* Dark mode toggle button */
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 20px;
+  color: inherit;
+}
+
+/* -------------------- Hero Section -------------------- */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: top; /* vertical center */
+  align-items: center;     /* horizontal center */
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 515;
+  font-size: clamp(36px, 5vw, 52px); /* scales with screen size */
+  line-height: 100%;
+  letter-spacing: 0%;
+  width: 90%;
+  max-width: 1600px;
+  color: var(--text-color);
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.hero h1 .highlight {
+  color: var(--highlight-color);
+  transition: color 0.3s ease;
+}
+
+.hero .subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: var(--subtitle-color);
+  width: 80%;
+  max-width: 1200px;
+  text-align: center;
+  margin: 16px 0 32px 0;
+  transition: color 0.3s ease;
+}
+
+/* -------------------- Hero Button -------------------- */
+.hero-button {
+  display: inline-block;
+  width: 242px;
+  height: 84px;
+  line-height: 84px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--button-text);
+  text-decoration: none;
+  background-color: var(--button-bg);
+  border-top: 1px solid var(--button-bg);
+  border-radius: 12px; /* adjusts curvature */
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-top-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: var(--highlight-color);
+  border-top-color: var(--highlight-color);
+}
+
+/* -------------------- Main Content -------------------- */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+main h1 {
+  margin-top: 120px;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+main p {
+  font-size: 1rem;
+  color: #374151;
+}
+
 
 /* -------------------- Tier List Gallery -------------------- */
 
@@ -39,4 +258,28 @@
 .tierlist-card h3 {
   margin-top: 12px;
   font-weight: 400;
+}
+
+
+/* -------------------- Dark Mode -------------------- */
+body.dark-mode {
+  --text-color: #ffffff;
+  --subtitle-color: #bbbbbb;
+  --background-color: #000000;
+  --header-bg: #1f1f1f;
+  --header-border: #444;
+  --nav-link-color: #ffffff;
+  --logo: #ffffff;
+  --button-bg: #4784ED;
+  --button-text: #ffffff;
+  --panel-bg: #1f1f1f;
+  --panel-shadow: rgba(0,0,0,0.2);
+  --panel-text-color: #ffffff;
+  
+}
+/* Dark mode nav hover */
+body.dark-mode .nav-links a:hover,
+body.dark-mode .dropbtn:hover {
+  background-color: #A9A9A9; /* darker gray hover box */
+  color: #ffffff;         /* white text for readability */
 }
