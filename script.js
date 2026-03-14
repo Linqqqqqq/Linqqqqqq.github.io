@@ -42,5 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
       button.style.left = currentX + offsetX + "px";
       button.style.top = currentY + offsetY + "px";
     });
+    // Refresh page if they actually manage to click it
+    button.addEventListener("click", () => {
+      location.reload();
+    });
   }
 });
