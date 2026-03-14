@@ -338,6 +338,41 @@ main p {
   color: var(--background-color);
 }
 
+/* -------------------- Tier List Gallery -------------------- */
+
+.tierlist-gallery {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 24px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.tierlist-card {
+  text-decoration: none;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.tierlist-card img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px var(--panel-shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tierlist-card:hover img {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px var(--panel-shadow);
+}
+
+.tierlist-card h3 {
+  margin-top: 12px;
+  font-weight: 400;
+}
+
 /* -------------------- Dark Mode -------------------- */
 body.dark-mode {
   --text-color: #ffffff;
