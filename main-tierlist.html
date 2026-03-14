@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,68 +6,65 @@
   <title>Tier Lists</title>
 
   <!-- Fonts -->
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-
-  <link rel="stylesheet" href="subpages.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="subpages.css"> <!-- layout for subpages -->
 </head>
 
 <body>
 
-<header>
-  <div class="logo">
-    <a href="index.html">Home</a>
-  </div>
+  <header>
+    <div class="logo">
+      <a href="index.html">Home</a>
+    </div>
 
-  <nav class="nav-links">
+    <nav class="nav-links">
+      <div class="dropdown">
+        <a href="coding.html" class="dropbtn">Coding</a>
+        <div class="dropdown-content">
+          <a href="data-analysis.html">Data Analysis</a>
+          <a href="computational-neuroscience.html">Computational Neuroscience</a>
+          <a href="projects.html">Projects</a>
+        </div>
+      </div>
 
-<div class="dropdown">
-  <a href="coding.html" class="dropbtn">Coding</a>
-  <div class="dropdown-content">
-    <a href="data-analysis.html">Data Analysis</a>
-    <a href="computational-neuroscience.html">Computational Neuroscience</a>
-    <a href="projects.html">Projects</a>
-  </div>
-</div>
+      <div class="dropdown">
+        <a href="research.html" class="dropbtn">Research</a>
+        <div class="dropdown-content">
+          <a href="eeg-research.html">Everything on EEG</a>
+          <a href="literature-reviews.html">Everything on Literature Reviews</a>
+          <a href="experimental-design.html">Everything on Experimental Design</a>
+        </div>
+      </div>
 
-<div class="dropdown">
-  <a href="research.html" class="dropbtn">Research</a>
-  <div class="dropdown-content">
-    <a href="eeg-research.html">Everything on EEG</a>
-    <a href="literature-reviews.html">Everything on Literature Reviews</a>
-    <a href="experimental-design.html">Everything on Experimental Design</a>
-  </div>
-</div>
+      <div class="dropdown">
+        <a href="biology-kin.html" class="dropbtn">Biology/Kin</a>
+        <div class="dropdown-content">
+          <a href="concussions.html">Everything on Concussions</a>
+          <a href="gerontology.html">Everything on Aging</a>
+          <a href="neuroscience.html">Everything on Neuroscience</a>
+        </div>
+      </div>
 
-<div class="dropdown">
-  <a href="biology-kin.html" class="dropbtn">Biology/Kin</a>
-  <div class="dropdown-content">
-    <a href="concussions.html">Everything on Concussions</a>
-    <a href="gerontology.html">Everything on Aging</a>
-    <a href="neuroscience.html">Everything on Neuroscience</a>
-  </div>
-</div>
+      <div class="dropdown">
+        <a href="main-tierlist.html" class="dropbtn">Tier Lists</a>
+        <div class="dropdown-content">
+          <a href="ranking-software.html">Ranking Softwares</a>
+          <a href="ranking-reference-managers.html">Ranking Reference Managers</a>
+          <a href="ranking-databases.html">Ranking Journal Article Databases</a>
+        </div>
+      </div>
 
-<div class="dropdown">
-  <a href="main-tierlist.html" class="dropbtn">Tier Lists</a>
-  <div class="dropdown-content">
-    <a href="ranking-software.html">Ranking Softwares</a>
-    <a href="ranking-reference-managers.html">Ranking Reference Managers</a>
-    <a href="ranking-databases.html">Ranking Journal Article Databases</a>
-  </div>
-</div>
+      <a href="about.html">About</a>
+      <button id="dark-mode-toggle">🌙</button>
+    </nav>
+  </header>
 
-<a href="about.html">About</a>
-
-<button id="dark-mode-toggle">🌙</button>
-
-  </nav>
-</header>
-<main>
+  <main>
     <!-- Page Title -->
     <section class="hero">
       <h1>Tier Lists</h1>
@@ -94,7 +90,6 @@
     </section>
   </main>
 
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
