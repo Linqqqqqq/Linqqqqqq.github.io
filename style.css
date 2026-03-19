@@ -307,7 +307,7 @@ main p {
 .error-page p {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
-  color: var(--subtitle-color);
+  color: var(--text-color);
   max-width: 500px;
   margin-bottom: 40px;
 }
