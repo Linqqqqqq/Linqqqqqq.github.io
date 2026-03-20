@@ -221,7 +221,7 @@ main h1 {
 
 main p {
   font-size: 1rem;
-  color: #374151;
+  color: var(--text-color);
 }
 
 /* -------------------- Panels -------------------- */
