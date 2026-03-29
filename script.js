@@ -48,3 +48,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+ // -------------------- Scroll arrow button --------------------
+function scrollDown() {
+  window.scrollBy({
+    top: window.innerHeight,
+    behavior: 'smooth'
+  });
+}
+
+window.addEventListener("scroll", function () {
+  const arrow = document.querySelector(".scroll-indicator");
+  if (window.scrollY > 100) {
+    arrow.style.opacity = "0";
+  } else {
+    arrow.style.opacity = "0.7";
+  }
+});
