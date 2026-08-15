@@ -1,4 +1,8 @@
 /* -------------------- Tierlist Page -------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
 .tier-list {
   max-width: 1000px;
   margin: 3rem auto;
