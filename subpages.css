@@ -141,13 +141,12 @@ header {
 
 /* -------------------- Hero Section -------------------- */
 .hero {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: top; /* vertical center */
-  align-items: center;     /* horizontal center */
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 40px 20px 20px;
 }
 
 .hero h1 {
