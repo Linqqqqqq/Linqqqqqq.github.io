@@ -224,6 +224,27 @@ main p {
   color: var(--text-color);
 }
 
+/* -------------------- About Page Content -------------------- */
+.about-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.about-section {
+  margin-bottom: 60px;
+}
+
+.about-heading {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.about-page p {
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
 /* -------------------- Panels -------------------- */
 .panels {
   display: grid;
