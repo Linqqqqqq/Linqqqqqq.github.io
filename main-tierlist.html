@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="subpages.css"> <!-- layout for subpages -->
+  <link rel="stylesheet" href="subpages.css">
 </head>
 
 <body>
@@ -21,6 +21,8 @@
     </div>
 
     <nav class="nav-links">
+
+      <!-- Coding -->
       <div class="dropdown">
         <a href="coding.html" class="dropbtn">Coding</a>
         <div class="dropdown-content">
@@ -30,6 +32,7 @@
         </div>
       </div>
 
+      <!-- Research -->
       <div class="dropdown">
         <a href="research.html" class="dropbtn">Research</a>
         <div class="dropdown-content">
@@ -39,6 +42,7 @@
         </div>
       </div>
 
+      <!-- Biology / Kinesiology -->
       <div class="dropdown">
         <a href="biology-kin.html" class="dropbtn">Biology/Kin</a>
         <div class="dropdown-content">
@@ -48,6 +52,7 @@
         </div>
       </div>
 
+      <!-- Tier Lists -->
       <div class="dropdown">
         <a href="main-tierlist.html" class="dropbtn">Tier Lists</a>
         <div class="dropdown-content">
@@ -58,36 +63,250 @@
       </div>
 
       <a href="about.html">About</a>
+
       <button id="dark-mode-toggle">🌙</button>
     </nav>
   </header>
 
+
   <main>
+
     <!-- Page Title -->
     <section class="hero">
       <h1>Tier Lists</h1>
-      <p class="subtitle">Rankings of tools, platforms, and resources I have used during my degree.</p>
+
+      <p class="subtitle">
+        My extremely scientific rankings of the tools, software,
+        and resources I've used throughout my degree.
+      </p>
     </section>
 
-    <!-- Gallery of Tier Lists -->
-    <section class="tier-gallery">
-      <a href="ranking-software.html" class="tier-item">
-        <img src="images/softwares.png" alt="Software Tier List">
-        <h3>Software</h3>
+
+    <!-- Tier List Previews -->
+    <section class="tier-preview-grid">
+
+
+      <!-- =========================
+           MANUSCRIPT SOFTWARE
+      ========================== -->
+
+      <a href="ranking-software.html" class="tier-preview-card">
+
+        <div class="tier-preview-heading">
+          <div>
+            <p class="tier-category">Tier List</p>
+            <h2>Manuscript Writing Software</h2>
+          </div>
+
+          <span class="view-ranking">View ranking →</span>
+        </div>
+
+
+        <div class="mini-tier-list">
+
+          <!-- S Tier -->
+          <div class="mini-tier-row">
+            <div class="mini-tier-label tier-s">
+              S
+            </div>
+
+            <div class="mini-tier-items">
+              <span>Google Docs</span>
+            </div>
+          </div>
+
+
+          <!-- A Tier -->
+          <div class="mini-tier-row">
+            <div class="mini-tier-label tier-a">
+              A
+            </div>
+
+            <div class="mini-tier-items">
+              <span>Microsoft Word</span>
+              <span>Notion</span>
+            </div>
+          </div>
+
+
+          <!-- B Tier -->
+          <div class="mini-tier-row">
+            <div class="mini-tier-label tier-b">
+              B
+            </div>
+
+            <div class="mini-tier-items">
+              <span>Quarto</span>
+            </div>
+          </div>
+
+
+          <!-- C Tier -->
+          <div class="mini-tier-row">
+            <div class="mini-tier-label tier-c">
+              C
+            </div>
+
+            <div class="mini-tier-items">
+              <span>Overleaf</span>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="preview-note">
+          Google Docs vs Word vs Notion vs Quarto vs Overleaf.
+        </p>
+
       </a>
 
-      <a href="ranking-reference-managers.html" class="tier-item">
-        <img src="images/reference-managers.png" alt="Reference Managers Tier List">
-        <h3>Reference Managers</h3>
+
+
+      <!-- =========================
+           REFERENCE MANAGERS
+      ========================== -->
+
+      <a href="ranking-reference-managers.html" class="tier-preview-card">
+
+        <div class="tier-preview-heading">
+          <div>
+            <p class="tier-category">Tier List</p>
+            <h2>Reference Managers</h2>
+          </div>
+
+          <span class="view-ranking">View ranking →</span>
+        </div>
+
+
+        <div class="mini-tier-list">
+
+          <!-- S Tier -->
+          <div class="mini-tier-row">
+            <div class="mini-tier-label tier-s">
+              S
+            </div>
+
+            <div class="mini-tier-items">
+              <span>Zotero</span>
+            </div>
+          </div>
+
+
+          <!-- A Tier -->
+          <div class="mini-tier-row">
+            <div class="mini-tier-label tier-a">
+              A
+            </div>
+
+            <div class="mini-tier-items">
+              <span>My Brain™ + Blank Document</span>
+            </div>
+          </div>
+
+
+          <!-- B Tier -->
+          <div class="mini-tier-row">
+            <div class="mini-tier-label tier-b">
+              B
+            </div>
+
+            <div class="mini-tier-items">
+              <span>Mendeley</span>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="preview-note">
+          Zotero, Mendeley, and the questionable organizational system
+          known as my brain.
+        </p>
+
       </a>
 
-      <a href="ranking-databases.html" class="tier-item">
-        <img src="images/journal-databases.png" alt="Journal Databases Tier List">
-        <h3>Journal Databases</h3>
+
+
+      <!-- =========================
+           JOURNAL DATABASES
+      ========================== -->
+
+      <a href="ranking-databases.html" class="tier-preview-card">
+
+        <div class="tier-preview-heading">
+          <div>
+            <p class="tier-category">Tier List</p>
+            <h2>Journal Article Databases</h2>
+          </div>
+
+          <span class="view-ranking">View ranking →</span>
+        </div>
+
+
+        <div class="mini-tier-list">
+
+          <!-- S Tier -->
+          <div class="mini-tier-row">
+            <div class="mini-tier-label tier-s">
+              S
+            </div>
+
+            <div class="mini-tier-items">
+              <span>Google Scholar</span>
+            </div>
+          </div>
+
+
+          <!-- A Tier -->
+          <div class="mini-tier-row">
+            <div class="mini-tier-label tier-a">
+              A
+            </div>
+
+            <div class="mini-tier-items">
+              <span>PsycINFO</span>
+              <span>ScienceDirect</span>
+            </div>
+          </div>
+
+
+          <!-- B Tier -->
+          <div class="mini-tier-row">
+            <div class="mini-tier-label tier-b">
+              B
+            </div>
+
+            <div class="mini-tier-items">
+              <span>Taylor &amp; Francis</span>
+              <span>IJWIL</span>
+            </div>
+          </div>
+
+
+          <!-- C Tier -->
+          <div class="mini-tier-row">
+            <div class="mini-tier-label tier-c">
+              C
+            </div>
+
+            <div class="mini-tier-items">
+              <span>JSTOR</span>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="preview-note">
+          Psychology-biased rankings of finding Academic Papers.
+        </p>
+
       </a>
+
     </section>
+
   </main>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
